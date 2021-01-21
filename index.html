@@ -12,60 +12,18 @@
 </head>
 <body onload="init()">
     <div class="day" id="bg"></div>
-    <section class="navbar-desktop">
-        <nav id="navbar" class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-                <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_nKCnOy.json" background="transparent"  speed="1"  
-                style="width: 50px; height: 50px;" loop autoplay></lottie-player>
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                  </li>
-                </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
-            </div>
-          </nav>
-    </section>
     <!-- clock section -->
     <section data-aos="fade-up"  data-aos-duration="1000" class="content-section">         
         <div class="container">
             <div class="row">
-                <div class="col-sm-6 col-md-4 col-lg-12 text-center card-desktop">
+                <div class="col-sm-6 col-md-4 col-lg-12 text-center">
                     <div  id="card" class="card mx-auto">
-                        <lottie-player class="lottie-player mx-auto" src="https://assets9.lottiefiles.com/packages/lf20_8jyg6s9f.json
-                        " background="transparent"  speed="1"  
-                        style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+                        <lottie-player src="https://assets2.lottiefiles.com/private_files/lf30_zwcbt8.json" background="transparent"  speed="1"  
+                        style="width: 300px; height: 300px; padding: 0px 60px;" loop autoplay></lottie-player>
                         <div class="jam" id="jam">00:00:00</div>
                         <div class="greetings" id="greetings"></div>
-                        <div class="quotes" id="quotation"></div>
                         <a href="https://www.youtube.com/" class="btn btn-primary btn-primarys mx-auto">Eksplor Ketenangan →</a>                        
+                        <div class="quotes" id="quotation"></div>
                     </div>
                 </div>
             </div>
@@ -103,7 +61,6 @@
     if(h<2) {
         txt='Have a Nice Dream😪'
         document.getElementById("greetings").innerHTML=txt;
-        document.getElementById("bg").className = "night";
 
     }
     else if(h<10) {
@@ -111,7 +68,6 @@
         document.getElementById("greetings").innerHTML=txt;
         document.getElementById("bg").className = "day";
         document.getElementById("card").className += " card-clock-day";
-        document.getElementById("navbar").className += " navbar-light shadow-sm";
 
     }
     else if(h<13) {
@@ -119,7 +75,6 @@
         document.getElementById("greetings").innerHTML=txt;
         document.getElementById("bg").className = "day";
         document.getElementById("card").className += " card-clock-day";
-        document.getElementById("navbar").className += " navbar-light shadow-sm";
 
     }
     else if(h<15) {
@@ -127,15 +82,13 @@
         document.getElementById("greetings").innerHTML=txt;
         document.getElementById("bg").className = "day";
         document.getElementById("card").className += " card-clock-day";
-        document.getElementById("navbar").className += " navbar-light shadow-sm";
 
     }
-    else if(h<17) {
+    else if(h<18) {
         txt='Istirahat aja bentar recharge semangat dulu😳'
         document.getElementById("greetings").innerHTML=txt;
         document.getElementById("bg").className = "day";
         document.getElementById("card").className += " card-clock-day";
-        document.getElementById("navbar").className += " navbar-light shadow-sm";
 
     }
     else if(h<21) {
@@ -143,7 +96,6 @@
         document.getElementById("greetings").innerHTML=txt;
         document.getElementById("bg").className = "night";
         document.getElementById("card").className += " card-clock-night";
-        document.getElementById("navbar").className += " navbar-dark";
 
     }
     else if(h<22) {
@@ -151,15 +103,13 @@
         document.getElementById("greetings").innerHTML=txt;
         document.getElementById("bg").className = "night";
         document.getElementById("card").className += " card-clock-night";
-        document.getElementById("navbar").className += " navbar-dark";
 
     }
     else if(h<24) {
-        txt='yowes aku balik ke plafon dulu ngantuk😢'
+        txt='Jangan diforsir, jaga kesehatan juga😢'
         document.getElementById("greetings").innerHTML=txt;
         document.getElementById("bg").className = "night";
         document.getElementById("card").className += " card-clock-night";
-        document.getElementById("navbar").className += " navbar-dark";
 
     }
 }
@@ -173,6 +123,10 @@ const quotes = [
   },
   {
     "quote": "The moment you refuse to change is the moment you start to lag behind.",
+    "source": ""
+  },
+  {
+    "quote": "You can't make up for lost time, You can only do better in the future.",
     "source": ""
   },
   {
